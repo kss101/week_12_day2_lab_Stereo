@@ -1,13 +1,12 @@
-public class Radio {
+public class Radio extends Component {
     private String make;
     private String model;
 
     public Radio(String make, String model){
-        this.make = make;
-        this.model = model;
+        super(make, model);
     }
 
-    public String tune(){
-        return "Sting";
+    public String tuneRadioStation(){
+        return "Playing Sting on Radio 1";
     }
 }
